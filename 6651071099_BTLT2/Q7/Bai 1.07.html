@@ -1,39 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <style>
-
-        </style>
+        <title>Công ty Hoa tươi Nhân Ái</title>
     </head>
 
     <body>
-        <h1>Công ty Hoa tươi Nhân ái</h1>
-        <img src="" alt="" style="display: inline;">
-        <div style="display: inline;">
-            <ol>
-                <li>
-                    Giới thiệu
-                    <ul>
-                        <li>Thành lập ngày 25/05/2007</li>
-                        <li>Chuyên cung cấp các loại hoa tươi</li>
-                        <li>Có trên 20 cửa hàng bán lẻ tại TP.HCM</li>
-                        <li>Nhận kết giỏ hoa theo yêu cầu của khách hàng</li>
-                    </ul>
-                </li>
-                <li>
-                    Liên hệ
-                    <ul>
-                        <li>Điện thoại 84-08-8351056</li>
-                        <li>227 Nguyễn Văn Cừ, Quận 5, TP.HCM</li>
-                    </ul>
-                </li>
-            </ol>
 
-        </div>
+        <!-- Tiêu đề: Thẻ <h2>, thuộc tính align và style (color) -->
+        <h2 align="center" style="color: #d1006e;">Công ty Hoa tươi Nhân Ái</h2>
+
+        <!-- Hình ảnh: Thẻ <img>, src để trống, thuộc tính height và align -->
+        <img src="rose.gif" height="260" align="left" alt="Hoa hồng">
+
+        <!-- Danh sách Giới thiệu và Liên hệ: Sử dụng <ol>, <li>, <ul> và thuộc tính type -->
+        <ol>
+            <!-- Mục 1: Giới thiệu -->
+            <li>
+                <!-- Tag <font> với style: background-color, color, font-weight -->
+                <font style="background-color: #d1006e; color: #ffffff; font-weight: bold; padding: 2px 6px;">Giới thiệu</font>
+                <ul type="square">
+                    <li>Thành lập ngày 25/05/2007</li>
+                    <li>Chuyên cung cấp các loại hoa tươi</li>
+                    <li>Có trên 20 cửa hàng bán lẻ tại TP.HCM</li>
+                    <li>Nhận kết giỏ hoa theo yêu cầu của khách hàng</li>
+                </ul>
+            </li>
+
+            <hr>
+
+            <!-- Mục 2: Liên hệ -->
+            <li>
+                <!-- Tag <font> với style: background-color, color, font-weight -->
+                <font style="background-color: #d1006e; color: #ffffff; font-weight: bold; padding: 2px 6px;">Liên hệ</font>
+                <ul type="circle">
+                    <li>Điện thoại: 84-08-8351056</li>
+                    <li>Địa chỉ: &nbsp;&nbsp;&nbsp;<i>227 Nguyễn Văn Cừ, Quận 5, TP.HCM</i></li>
+                </ul>
+            </li>
+        </ol>
+
+        <!-- Ngắt dòng canh lề (clear float của img) để phần bản quyền nằm gọn phía dưới -->
+        <br clear="all">
+
+        <!-- Dòng bản quyền với ký tự &copy; và liên kết thẻ <a> -->
+        <p align="center" style="background-color: #fdebf2; padding: 6px; margin-top: 20px;">
+            <span style="color: #b30059; font-weight: bold;">&copy; Copyright:</span>
+            <a href="http://www.csc.hcmuns.edu.vn">Trung Tâm Tin Học - Đại Học Khoa Học Tự Nhiên TP.HCM</a>
+        </p>
+
     </body>
 
 </html>

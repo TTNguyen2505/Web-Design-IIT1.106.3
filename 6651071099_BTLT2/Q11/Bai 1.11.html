@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Đăng nhập</title>
+        <style>
+            body {
+                font-family: Arial, "Times New Roman", sans-serif;
+                margin: 30px;
+            }
+
+            #lblTitle {
+                text-align: center;
+                font-size: 24px;
+                font-weight: bold;
+                color: #8b2500;
+                margin-bottom: 20px;
+            }
+
+            #tblLogin {
+                border-collapse: collapse;
+                background-color: #e2f2fc;
+                border: 2px solid #8b0000;
+                margin: 0 auto;
+            }
+
+            #tblLogin td {
+                border: 1px solid #8b0000;
+                padding: 4px 8px;
+                font-size: 14px;
+            }
+
+            .txtInput {
+                width: 170px;
+                padding: 2px 4px;
+                border: 1px solid #7f9db9;
+                box-sizing: border-box;
+                background-color: #ffffff;
+            }
+
+            #btnDongY {
+                padding: 2px 10px;
+                font-size: 13px;
+                cursor: pointer;
+            }
+
+            #lblResult {
+                color: blue;
+                text-align: center;
+                font-family: "Times New Roman", serif;
+                font-size: 16px;
+                min-height: 18px;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <div id="lblTitle">Đăng nhập</div>
+
+        <form id="frmLogin">
+            <table id="tblLogin">
+                <tr>
+                    <td>Mã người dùng:</td>
+                    <td>
+                        <input type="text" id="txtUsername" class="txtInput" value="ptnhung" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>Mật khẩu:</td>
+                    <td>
+                        <input type="password" id="txtPassword" class="txtInput" value="12345678" />
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <input type="button" id="btnDongY" value="Đồng ý" onclick="document.getElementById('lblResult').innerText = document.getElementById('txtUsername').value;" />
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <div id="lblResult"></div>
+                    </td>
+                </tr>
+            </table>
+        </form>
+
+    </body>
+
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Phiếu đăng ký tham gia chương trình khuyến mãi</title>
+        <style>
+            body {
+                font-family: Arial, "Times New Roman", sans-serif;
+                margin: 20px;
+            }
+
+            #lblTitle {
+                text-align: center;
+                font-family: "Times New Roman", Times, serif;
+                font-size: 24px;
+                font-weight: bold;
+                color: #27632a;
+                margin-bottom: 15px;
+            }
+
+            #tblDangKy {
+                border-collapse: collapse;
+                background-color: #e9f5ed;
+                border: 2px solid #1e5a22;
+                margin: 0 auto;
+            }
+
+            #tblDangKy td {
+                border: 1px solid #1e5a22;
+                padding: 4px 8px;
+                font-size: 14px;
+                color: #000000;
+            }
+
+            #lblThongBao {
+                color: red;
+                font-family: "Times New Roman", Times, serif;
+                font-size: 15px;
+                text-align: center;
+                min-height: 18px;
+            }
+
+            #btnDongY {
+                padding: 2px 12px;
+                font-size: 13px;
+                cursor: pointer;
+            }
+
+            select[multiple] {
+                width: 140px;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <div id="lblTitle">Phiếu đăng ký tham gia chương trình khuyến mãi</div>
+
+        <form id="frmKhuyenMai">
+            <table id="tblDangKy" border="1" bordercolor="#1e5a22" cellpadding="4" cellspacing="0">
+                <tr>
+                    <td>Họ và tên</td>
+                    <td>
+                        <input type="text" id="txtHoTen" size="32" value="Nguyễn Ngọc Quỳnh Nga" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>Địa chỉ</td>
+                    <td>
+                        <input type="text" id="txtDiaChi" size="26" value="2Bia Hùng Vương, Q10" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>Điện thoại</td>
+                    <td>
+                        <input type="text" id="txtDienThoai" size="18" value="0909097506" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>Phái</td>
+                    <td>
+                        <input type="radio" name="radPhai" id="radNam" value="Nam" /> Nam
+                        <input type="radio" name="radPhai" id="radNu" value="Nữ" checked /> Nữ
+                    </td>
+                </tr>
+                <tr>
+                    <td>Nghề nghiệp</td>
+                    <td>
+                        <select id="selNgheNghiep">
+                            <option value="bs">Bác sĩ</option>
+                            <option value="ks">Kỹ sư</option>
+                            <option value="gv" selected>Giáo viên</option>
+                            <option value="khac">Khác</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Chọn sản phẩm tham gia</td>
+                    <td>
+                        <select id="selSanPham" size="4" multiple>
+                            <option value="kdr" selected>Kem đánh răng</option>
+                            <option value="bg">Bột giặt</option>
+                            <option value="dgd" selected>Dầu gội đầu</option>
+                            <option value="st">Sữa tắm</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Số người dự đoán tham gia</td>
+                    <td>
+                        <input type="text" id="txtDuDoan" size="12" value="250000" />
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <input type="button" id="btnDongY" value="Đồng ý" onclick="document.getElementById('lblThongBao').innerText = 'Bạn đã đăng ký thành công!!!';" />
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <div id="lblThongBao"></div>
+                    </td>
+                </tr>
+            </table>
+        </form>
+
+    </body>
+
+</html>

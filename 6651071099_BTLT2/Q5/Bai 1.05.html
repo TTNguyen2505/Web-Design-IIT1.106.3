@@ -1,53 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>Định dạng văn bản</title>
         <style>
-            span,
-            sub,
-            sup {
-                padding: 0;
-                margin: 0;
+            body {
+                font-family: Arial, "Times New Roman", sans-serif;
+                margin: 30px;
+                font-size: 16px;
+            }
+
+            h2 {
+                color: #125833;
+                font-family: Arial, "Times New Roman", sans-serif;
+                margin-bottom: 25px;
+            }
+
+            p {
+                margin: 8px 0;
+                line-height: 1.6;
+            }
+
+            pre {
+                font-family: "Courier New", Courier, monospace;
+                font-size: 15px;
+                font-weight: bold;
+                padding: 15px 0;
+                line-height: 1.8;
+                margin-top: 15px;
             }
         </style>
     </head>
 
     <body>
-        <h1>Định dạng văn bản</h1>
-        <div>
-            <span style="font-weight: bold; font-style: italic; text-decoration: underline;">Hoá học:</span>
-            <span style="font-style: italic;"> Nước</span>
-            <span style="color: red;;">H</span>
-            <sub style="color: red;;">2</sub>
-            <span style="color: red;;">O</span>
-            <span style="font-style: italic;">; Axit Sunfuric</span>
-            <spa style="color: red;;" n>H</span>
-                <sub style="color: red;;">2</sub>
-                <span style="color: red;;">SO</span>
-                <sub style="color: red;;">4</sub>
-        </div>
-        <div>
-            <span style="font-weight: bold; font-style: italic; text-decoration: underline;">Toán học:</span>
-            <span style="font-style: italic;"> Phương trình bậc 2: </span>
-            <span style="color: red;">ax</span>
-            <sup style="color: red;">2</sup>
-            <span style="color: red;"> + </span>
-            <span style="color: red;">bx + c = 0</span>
-        </div>
-        <div>
-            <span style="font-weight: bold; font-style: italic; text-decoration: underline;">Tin học:</span>
-            <span style="font-style: italic;"> Vòng lặp For</span>
-            <div style="background-color: #CCCCCC;">
-                <pre style="color: blue;">
-                                    For i = 0 To 10
-                                            Tong = Tong + 1
-                                    Next
-                </pre>
-            </div>
-        </div>
+
+        <h2 align="center">Định dạng văn bản</h2>
+
+        <p><b><u>Hóa học:</u></b> <i>Nước:</i>
+            <font color="#FF0000">H<sub>2</sub>O</font> ; <i>Axít Sunfuric:</i>
+            <font color="#FF0000">H<sub>2</sub>SO<sub>4</sub></font>
+        </p>
+
+        <p><b><u>Toán học:</u></b> <i>Phương trình bậc 2:</i>
+            <font color="#FF0000">ax<sup>2</sup> + bx + c = 0</font>
+        </p>
+
+        <p><b><u>Tin học:</u></b> <i>Vòng lặp For:</i></p>
+
+        <pre style="background-color: #CCCCCC; color: #0000CC;">
+            For i = 0 To 10
+
+                Tong = Tong + 1
+
+            Next</pre>
+
     </body>
 
 </html>

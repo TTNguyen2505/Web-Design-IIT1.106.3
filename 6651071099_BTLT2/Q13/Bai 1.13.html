@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Đăng ký du lịch</title>
+        <style>
+            body {
+                font-family: Arial, "Times New Roman", sans-serif;
+                margin: 20px;
+            }
+
+            #lblTitle {
+                text-align: center;
+                font-family: "Times New Roman", Times, serif;
+                font-size: 26px;
+                font-weight: bold;
+                color: #2b567e;
+                margin-bottom: 15px;
+            }
+
+            #tblDuLich {
+                border-collapse: collapse;
+                background-color: #fdfde6;
+                border: 2px solid #2b567e;
+                margin: 0 auto;
+            }
+
+            #tblDuLich td {
+                border: 1px solid #2b567e;
+                padding: 4px 8px;
+                font-size: 14px;
+            }
+
+            .label-cell {
+                color: #1a4369;
+                width: 130px;
+            }
+
+            .fieldset-custom {
+                margin: 4px auto;
+                box-sizing: border-box;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+            }
+
+            .fieldset-text {
+                color: #205a74;
+                font-size: 13px;
+            }
+
+            #lblThongBao {
+                color: #e05e00;
+                font-family: "Times New Roman", Times, serif;
+                font-size: 16px;
+                font-weight: bold;
+                text-align: center;
+                min-height: 20px;
+            }
+
+            #btnDongY {
+                padding: 2px 12px;
+                font-size: 13px;
+                cursor: pointer;
+            }
+
+            textarea {
+                resize: none;
+                font-family: Arial, sans-serif;
+                font-size: 13px;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <div id="lblTitle">Đăng ký du lịch</div>
+
+        <form id="frmDangKyDuLich">
+            <table id="tblDuLich" border="1" bordercolor="#2b567e" cellpadding="4" cellspacing="0">
+                <tr>
+                    <td class="label-cell">Họ và tên</td>
+                    <td>
+                        <input type="text" id="txtHoTen" size="36" value="Phạm Ngọc Cẩm Đào" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label-cell">Địa chỉ</td>
+                    <td>
+                        <input type="text" id="txtDiaChi" size="25" value="227 Nguyễn Văn Cừ" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label-cell">Điện thoại</td>
+                    <td>
+                        <input type="text" id="txtDienThoai" size="18" value="8351056" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label-cell">Khách Việt Nam</td>
+                    <td>
+                        <input type="checkbox" id="chkKhachVN" checked />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label-cell">Chọn tour</td>
+                    <td>
+                        <select id="selTour">
+                            <optgroup label="Miền Bắc">
+                                <option value="hn-hl-sp">Hà Nội - Hạ Long - Sapa</option>
+                                <option value="hn-ch-nb">Hà Nội - Chùa Hương - Ninh Bình</option>
+                                <option value="hn-cb-tc">Hà Nội - Cát Bà - Tuần Châu</option>
+                            </optgroup>
+                            <optgroup label="Miền Trung">
+                                <option value="hue-bm-dn">Huế - Bạch Mã - Đà Nẵng</option>
+                                <option value="nt-dl">Nha Trang - Đà lạt</option>
+                                <option value="bmt-gl-kt" selected>Buôn mê thuột - Gia lai - Kontum</option>
+                            </optgroup>
+                            <optgroup label="Miền Nam">
+                                <option value="hcm-ct-cm">TP.HCM - Cần Thơ - Cà Mau</option>
+                                <option value="hcm-mt">TP.HCM - Mỹ Tho</option>
+                            </optgroup>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label-cell">Phương tiện</td>
+                    <td>
+                        <input type="radio" name="radPhuongTien" id="radMayBay" value="MayBay" /> Máy bay
+                        <input type="radio" name="radPhuongTien" id="radOTo" value="OTo" checked /> Xe ô tô
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <fieldset class="fieldset-custom" style="border: 1px solid #8b0000; width: 350px; height: 55px;">
+                            <legend align="left" style="font-style: italic; color: #8b2500;">Số lượng đoàn khách</legend>
+                            <span class="fieldset-text">Người lớn <input type="text" id="txtNguoiLon" size="6" value="6" /></span>
+                            <span class="fieldset-text">Trẻ em <input type="text" id="txtTreEm" size="6" value="4" /></span>
+                        </fieldset>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label-cell">Ghi chú thêm</td>
+                    <td>
+                        <textarea id="txtGhiChu" rows="2" style="width: 300px;">Có 2 trẻ em dưới 6 tuổi
+Có 2 người ăn chay</textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <input type="button" id="btnDongY" value="Đồng ý" onclick="document.getElementById('lblThongBao').innerText = 'Bạn đã đăng ký thành công!!!';" />
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <div id="lblThongBao"></div>
+                    </td>
+                </tr>
+            </table>
+        </form>
+
+    </body>
+
+</html>
