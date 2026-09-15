@@ -1,0 +1,170 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f1f6f8;
+    color: #222;
+}
+
+body>header {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 12px 20px;
+    text-align: center;
+    color: white;
+    background: linear-gradient(110deg, #1685df, #13b47d);
+}
+
+hgroup {
+    margin: 0;
+}
+
+hgroup h1 {
+    margin: 0;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+hgroup p {
+    margin: 3px 0 0;
+    font-size: 15px;
+}
+
+nav {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 7px 0;
+    text-align: center;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.12);
+}
+
+nav a {
+    display: inline-block;
+    padding: 6px 15px;
+    margin: 0 2px;
+    color: #222;
+    text-decoration: none;
+    border-radius: 18px;
+}
+
+nav a:hover,
+nav a:first-child,
+nav a:nth-child(2) {
+    color: white;
+    background: #2388cf;
+}
+
+main {
+    max-width: 700px;
+    margin: 18px auto;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 185px;
+    gap: 16px;
+}
+
+article,
+aside {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.18);
+    overflow: hidden;
+}
+
+article>header {
+    padding: 14px 15px 8px;
+    background: linear-gradient(110deg, #d8f1e9, #c6e9df);
+}
+
+article h2 {
+    margin: 0 0 5px;
+    font-size: 20px;
+}
+
+article>header p {
+    margin: 0;
+    font-size: 13px;
+    color: #444;
+}
+
+article>p {
+    margin: 12px 15px;
+    line-height: 1.45;
+    font-size: 14px;
+}
+
+article>footer {
+    padding: 11px 15px;
+    background: #d4eee7;
+    font-size: 13px;
+    font-style: italic;
+}
+
+aside {
+    padding: 13px;
+    align-self: start;
+}
+
+aside h3 {
+    margin: 0 0 8px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #ddd;
+    font-size: 16px;
+}
+
+aside ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+aside li {
+    padding: 9px 0;
+    border-bottom: 1px solid #ddd;
+    font-size: 13px;
+}
+
+aside li:last-child {
+    border-bottom: none;
+}
+
+aside a {
+    color: #333;
+    text-decoration: none;
+}
+
+aside a:hover {
+    color: #1685df;
+    text-decoration: underline;
+}
+
+body>footer {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 11px 20px;
+    text-align: center;
+    background: #dce8f7;
+    font-size: 12px;
+}
+
+address {
+    font-style: normal;
+}
+
+@media (max-width: 720px) {
+    main {
+        margin: 15px;
+        grid-template-columns: 1fr;
+    }
+
+    body>header {
+        margin: 0 15px;
+    }
+
+    nav {
+        margin: 0 15px;
+    }
+}

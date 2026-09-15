@@ -1,0 +1,198 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #dce7f0;
+    color: #1e293b;
+    padding: 24px 0 40px;
+}
+
+.top-header {
+    width: 660px;
+    margin: 0 auto 16px;
+}
+
+.brand-logo {
+    height: 38px;
+    display: block;
+}
+
+.booking-card {
+    width: 660px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 26px 36px 32px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.page-title {
+    text-align: center;
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 22px;
+}
+
+.form-section {
+    margin-bottom: 18px;
+}
+
+.section-title {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 10px;
+}
+
+.field-item label,
+.date-column label,
+.seat-column label,
+.result-row label {
+    display: block;
+    font-size: 0.85rem;
+    color: #334155;
+    margin-bottom: 6px;
+}
+
+.route-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 12px;
+}
+
+.date-seat-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.date-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.required-wrap {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.required-symbol {
+    position: absolute;
+    right: -10px;
+    color: #ef4444;
+    font-size: 0.95rem;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="number"],
+select {
+    width: 100%;
+    border: 1px solid #94a3b8;
+    border-radius: 6px;
+    padding: 6px 10px;
+    font-size: 0.85rem;
+    color: #1e293b;
+    background-color: #ffffff;
+    outline: none;
+}
+
+input[type="date"] {
+    padding: 5px 8px;
+}
+
+select[size] {
+    height: 84px;
+    padding: 4px;
+}
+
+select optgroup {
+    font-size: 0.78rem;
+    color: #64748b;
+    font-style: normal;
+}
+
+select option {
+    padding: 2px 4px;
+    font-size: 0.82rem;
+    color: #1e293b;
+}
+
+.passenger-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 14px;
+}
+
+.result-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.88rem;
+}
+
+.result-row label {
+    margin-bottom: 0;
+}
+
+output {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #0f172a;
+}
+
+.note-text {
+    font-size: 0.8rem;
+    color: #64748b;
+}
+
+.security-box {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.lock-icon {
+    font-size: 1.45rem;
+    color: #64748b;
+    line-height: 1;
+}
+
+.security-text {
+    font-size: 0.8rem;
+    color: #334155;
+    line-height: 1.4;
+}
+
+keygen {
+    display: none;
+}
+
+.action-wrap {
+    margin-top: 24px;
+}
+
+.submit-btn {
+    width: 100%;
+    background-color: #ea580c;
+    color: #ffffff;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 2px 6px rgba(234, 88, 12, 0.35); }
