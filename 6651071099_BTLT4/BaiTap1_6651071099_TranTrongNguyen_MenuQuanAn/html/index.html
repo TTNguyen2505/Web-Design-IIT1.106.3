@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <title>
+            THE COZY BEAN - Coffee &amp; Bakery
+        </title>
+        <!-- Google Fonts: Playfair Display, Great Vibes & Plus Jakarta Sans -->
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+
+    <body class="page">
+        <!-- BEGIN: HeroHeader -->
+        <header class="site-header" data-purpose="main-hero">
+            <!-- Subtle warm atmospheric glow -->
+            <!-- Top Navigation Bar -->
+            <div class="site-topbar">
+                <!-- Brand Logo & Identity -->
+                <a class="site-brand" href="#">
+                    <div class="brand-mark">
+                        <div class="brand-mark-inner">
+                            <!-- Coffee cup glyph -->
+                            <svg class="brand-icon" fill="currentColor" viewbox="0 0 24 24">
+                                <path d="M2,21H20V19H2M20,8H18V5H20M20,3H4V13A4,4 0 0,0 8,17H14A4,4 0 0,0 18,13V10H20A2,2 0 0,0 22,8V5C22,3.89 21.1,3 20,3Z">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="brand-copy">
+                        <span class="brand-name">
+                            The Cozy Bean
+                        </span>
+                        <span class="brand-tagline">
+                            Coffee &amp; Bakery
+                        </span>
+                    </div>
+                </a>
+                <!-- Quick Cart Action -->
+                <div class="topbar-actions">
+                    <button class="cart-button" id="cartButton" title="Xem giỏ h&agrave;ng">
+                        <svg class="cart-icon" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+                            <path d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" stroke-linecap="round" stroke-linejoin="round">
+                            </path>
+                        </svg>
+                        <span>
+                            Giỏ h&agrave;ng
+                        </span>
+                        <span class="cart-badge" id="cartCountBadge">
+                            0
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <!-- Hero Titles & Brand Promise -->
+            <div class="hero-content">
+                <!-- Cursive Intro -->
+                <span class="hero-intro">
+                    Welcome to
+                </span>
+                <!-- Primary Main Heading -->
+                <h1 class="hero-title">
+                    THE COZY BEAN
+                </h1>
+                <!-- Decorative Divider -->
+                <div class="hero-divider">
+                    <div class="hero-divider-line">
+                    </div>
+                    <div class="hero-divider-dot">
+                    </div>
+                    <div class="hero-divider-line">
+                    </div>
+                </div>
+                <!-- Slogan -->
+                <p class="hero-slogan">
+                    &ldquo;Tận hưởng từng ph&uacute;t gi&acirc;y lắng &dstrok;ọng c&ugrave;ng t&aacute;ch c&agrave; ph&ecirc; &dstrok;ậm &dstrok;&agrave;&rdquo;
+                </p>
+            </div>
+            <!-- Sticky Sub-Navigation Bar -->
+            <nav class="category-nav" data-purpose="category-navigation">
+                <div class="category-nav-inner">
+                    <a class="category-link is-active" href="#menu">
+                        <span>
+                            ☕
+                        </span>
+                        Tất Cả
+                    </a>
+                    <a class="category-link" href="#traditional-coffee">
+                        <span>
+                            🍵
+                        </span>
+                        C&agrave; Ph&ecirc; &amp; Tr&agrave;
+                    </a>
+                    <a class="category-link" href="#bakery-section">
+                        <span>
+                            🥐
+                        </span>
+                        B&aacute;nh Ngọt
+                    </a>
+                    <a class="category-link" href="#specials">
+                        <span>
+                            🔥
+                        </span>
+                        M&oacute;n Hot
+                    </a>
+                    <a class="category-link" href="#booking">
+                        <span>
+                            📍
+                        </span>
+                        Li&ecirc;n Hệ / &Dstrok;ặt B&agrave;n
+                    </a>
+                </div>
+            </nav>
+        </header>
+        <!-- END: HeroHeader -->
+        <!-- BEGIN: MainContent -->
+        <main class="main-content" id="menu">
+            <!-- Filter Chips & Section Title Header -->
+            <div class="menu-header" data-purpose="menu-header">
+                <div class="menu-header-copy">
+                    <span class="section-kicker">
+                        Thực &Dstrok;ơn Chọn Lọc
+                    </span>
+                    <h2 class="section-title">
+                        Kh&aacute;m Ph&aacute; Hương Vị
+                    </h2>
+                </div>
+                <!-- Quick Filter Pills -->
+                <div class="filter-list" data-purpose="quick-filters">
+                    <button class="filter-button is-active">
+                        Tất Cả M&oacute;n
+                    </button>
+                    <button class="filter-button">
+                        ☕ C&agrave; Ph&ecirc;
+                    </button>
+                    <button class="filter-button">
+                        🍵 Tr&agrave; Tươi &amp; Macchiato
+                    </button>
+                    <button class="filter-button">
+                        🥐 B&aacute;nh &amp; Tr&aacute;ng Miệng
+                    </button>
+                </div>
+            </div>
+            <!-- Main Grid: Left Catalog + Right Specials Sidebar -->
+            <div class="content-layout">
+                <!-- Catalog Sections (Left 8 Cols) -->
+                <div class="catalog">
+                    <!-- SECTION 1: Cà Phê Truyền Thống & Pha Máy -->
+                    <section class="catalog-section" data-purpose="coffee-category" id="traditional-coffee">
+                        <div class="catalog-section-heading">
+                            <h3 class="catalog-section-title">
+                                C&agrave; Ph&ecirc; Truyền Thống &amp; Pha M&aacute;y
+                            </h3>
+                            <div class="catalog-section-line">
+                            </div>
+                        </div>
+                        <!-- Product Grid -->
+                        <div class="product-grid">
+                            <!-- Card 1: Cà Phê Muối Cozy (BEST SELLER) -->
+                            <article class="product-card" data-purpose="product-card">
+                                <div class="product-body">
+                                    <div class="product-media">
+                                        <span class="product-badge">
+                                            BEST SELLER
+                                        </span>
+                                        <img alt="C&agrave; Ph&ecirc; Muối Cozy" class="product-image" src="../images/ca_phe_muoi_cozy.jpg" />
+                                    </div>
+                                    <h4 class="product-title">
+                                        C&agrave; Ph&ecirc; Muối Cozy
+                                    </h4>
+                                    <p class="product-description">
+                                        Sự kết hợp ho&agrave;n hảo giữa c&agrave; ph&ecirc; phin &dstrok;ậm &dstrok;&agrave; v&agrave; lớp kem muối b&eacute;o ngậy thanh nhẹ.
+                                    </p>
+                                </div>
+                                <div class="product-footer">
+                                    <span class="product-price">
+                                        39.000&dstrok;
+                                    </span>
+                                    <button class="product-action" onclick="addToCart('C&agrave; Ph&ecirc; Muối Cozy', 39000)">
+                                        <span>
+                                            + &Dstrok;ặt m&oacute;n
+                                        </span>
+                                    </button>
+                                </div>
+                            </article>
+                            <!-- Card 2: Bạc Xỉu Espresso -->
+                            <article class="product-card" data-purpose="product-card">
+                                <div class="product-body">
+                                    <div class="product-media">
+                                        <img alt="Bạc Xỉu Espresso" class="product-image" src="../images/bac_xiu_espresso.jpg" />
+                                    </div>
+                                    <h4 class="product-title">
+                                        Bacxiu Espresso
+                                    </h4>
+                                    <p class="product-description">
+                                        Nhiều sữa &dstrok;ặc ngọt dịu h&ograve;a quyện 2 shot Espresso nguy&ecirc;n chất thơm nồng n&agrave;n.
+                                    </p>
+                                </div>
+                                <div class="product-footer">
+                                    <span class="product-price">
+                                        35.000&dstrok;
+                                    </span>
+                                    <button class="product-action" onclick="addToCart('Bacxiu Espresso', 35000)">
+                                        <span>
+                                            + &Dstrok;ặt m&oacute;n
+                                        </span>
+                                    </button>
+                                </div>
+                            </article>
+                            <!-- Card 3: Latte Hạt Dẻ Nóng -->
+                            <article class="product-card" data-purpose="product-card">
+                                <div class="product-body">
+                                    <div class="product-media">
+                                        <img alt="Latte Hạt Dẻ N&oacute;ng" class="product-image" src="../images/latte_hat_de_nong.jpg" />
+                                    </div>
+                                    <h4 class="product-title">
+                                        Latte Hạt Dẻ N&oacute;ng
+                                    </h4>
+                                    <p class="product-description">
+                                        Sữa tươi &dstrok;&aacute;nh n&oacute;ng mềm mịn ngậy hương syrup hạt dẻ nướng v&agrave; c&agrave; ph&ecirc; thượng hạng.
+                                    </p>
+                                </div>
+                                <div class="product-footer">
+                                    <span class="product-price">
+                                        45.000&dstrok;
+                                    </span>
+                                    <button class="product-action" onclick="addToCart('Latte Hạt Dẻ N&oacute;ng', 45000)">
+                                        <span>
+                                            + &Dstrok;ặt m&oacute;n
+                                        </span>
+                                    </button>
+                                </div>
+                            </article>
+                            <!-- Card 4: Cold Brew Cam Sả -->
+                            <article class="product-card" data-purpose="product-card">
+                                <div class="product-body">
+                                    <div class="product-media">
+                                        <img alt="Cold Brew Cam Sả" class="product-image" src="../images/cold_brew_cam_sa.jpg" />
+                                    </div>
+                                    <h4 class="product-title">
+                                        Cold Brew Cam Sả
+                                    </h4>
+                                    <p class="product-description">
+                                        C&agrave; ph&ecirc; ủ lạnh 16 tiếng kết hợp nước cam tươi thanh m&aacute;t v&agrave; hương sả sảng kho&aacute;i.
+                                    </p>
+                                </div>
+                                <div class="product-footer">
+                                    <span class="product-price">
+                                        48.000&dstrok;
+                                    </span>
+                                    <button class="product-action" onclick="addToCart('Cold Brew Cam Sả', 48000)">
+                                        <span>
+                                            + &Dstrok;ặt m&oacute;n
+                                        </span>
+                                    </button>
+                                </div>
+                            </article>
+                            <!-- Card 5: Cà Phê Trứng Béo Dẻo -->
+                            <article class="product-card" data-purpose="product-card">
+                                <div class="product-body">
+                                    <div class="product-media">
+                                        <img alt="C&agrave; Ph&ecirc; Trứng B&eacute;o Dẻo" class="product-image" src="../images/ca_phe_trung_beo_deo.jpg" />
+                                    </div>
+                                    <h4 class="product-title">
+                                        C&agrave; Ph&ecirc; Trứng B&eacute;o Dẻo
+                                    </h4>
+                                    <p class="product-description">
+                                        Lớp kem trứng &dstrok;&aacute;nh b&ocirc;ng mịn m&agrave;ng kh&ocirc;ng tanh, h&ograve;a quyện phin &dstrok;ậm &dstrok;&agrave; kh&oacute; qu&ecirc;n.
+                                    </p>
+                                </div>
+                                <div class="product-footer">
+                                    <span class="product-price">
+                                        42.000&dstrok;
+                                    </span>
+                                    <button class="product-action" onclick="addToCart('C&agrave; Ph&ecirc; Trứng B&eacute;o Dẻo', 42000)">
+                                        <span>
+                                            + &Dstrok;ặt m&oacute;n
+                                        </span>
+                                    </button>
+                                </div>
+                            </article>
+                            <!-- Card 6: Americano Mật Ong -->
+                            <article class="product-card" data-purpose="product-card">
+                                <div class="product-body">
+                                    <!-- Mockup Minimal Text Banner Style as shown in layout -->
+                                    <div class="product-media">
+                                        <span class="product-mockup">
+                                            Americano
+                                        </span>
+                                    </div>
+                                    <h4 class="product-title">
+                                        Americano Mật Ong
+                                    </h4>
+                                    <p class="product-description">
+                                        Sự kết hợp &dstrok;ơn giản nhẹ nh&agrave;ng giữa Espresso &dstrok;ậm v&agrave; ch&uacute;t ngọt thanh dịu.
+                                    </p>
+                                </div>
+                                <div class="product-footer">
+                                    <span class="product-price">
+                                        32.000&dstrok;
+                                    </span>
+                                    <button class="product-action" onclick="addToCart('Americano Mật Ong', 32000)">
+                                        <span>
+                                            + &Dstrok;ặt m&oacute;n
+                                        </span>
+                                    </button>
+                                </div>
+                            </article>
+                        </div>
+                    </section>
+                    <!-- SECTION 2: Trà Tươi & Macchiato Thanh Nhã -->
+                    <section class="catalog-section" data-purpose="tea-category" id="tea-category">
+                        <div class="catalog-section-heading">
+                            <h3 class="catalog-section-title">
+                                Tr&agrave; Tươi &amp; Macchiato Thanh Nh&atilde;
+                            </h3>
+                            <div class="catalog-section-line">
+                            </div>
+                        </div>
+                        <!-- Product Grid -->
+                        <div class="product-grid">
+                            <!-- Card 7: Trà Ô Long Dâu Tằm -->
+                            <article class="product-card" data-purpose="product-card">
+                                <div class="product-body">
+                                    <div class="product-media">
+                                        <img alt="Tr&agrave; &Ocirc; Long D&acirc;u Tằm" class="product-image" src="../images/tra_o_long_dau_tam.jpg" />
+                                    </div>
+                                    <h4 class="product-title">
+                                        Tr&agrave; &Ocirc; Long D&acirc;u Tằm
+                                    </h4>
+                                    <p class="product-description">
+                                        Tr&agrave; &Ocirc; Long thơm ng&aacute;t kết hợp d&acirc;u tằm ng&acirc;m &dstrok;ường ph&egrave;n chua ngọt dễ chịu.
+                                    </p>
+                                </div>
+                                <div class="product-footer">
+                                    <span class="product-price">
+                                        42.000&dstrok;
+                                    </span>
+                                    <button class="product-action" onclick="addToCart('Tr&agrave; &Ocirc; Long D&acirc;u Tằm', 42000)">
+                                        <span>
+                                            + &Dstrok;ặt m&oacute;n
+                                        </span>
+                                    </button>
+                                </div>
+                            </article>
+                            <!-- Card 8: Trà Sen Macchiato (HOT BADGE) -->
+                            <article class="product-card" data-purpose="product-card">
+                                <div class="product-body">
+                                    <div class="product-media">
+                                        <span class="product-badge">
+                                            HOT
+                                        </span>
+                                        <img alt="Tr&agrave; Sen Macchiato" class="product-image" src="../images/tra_sen_macchiato.jpg" />
+                                    </div>
+                                    <h4 class="product-title">
+                                        Tr&agrave; Sen Macchiato
+                                    </h4>
+                                    <p class="product-description">
+                                        Tr&agrave; sen T&acirc;y Hồ thơm dịu kết hợp lớp v&aacute;ng sữa Macchiato s&aacute;nh mịn, b&eacute;o...
+                                    </p>
+                                </div>
+                                <div class="product-footer">
+                                    <span class="product-price">
+                                        45.000&dstrok;
+                                    </span>
+                                    <button class="product-action" onclick="addToCart('Tr&agrave; Sen Macchiato', 45000)">
+                                        <span>
+                                            + &Dstrok;ặt m&oacute;n
+                                        </span>
+                                    </button>
+                                </div>
+                            </article>
+                            <!-- Card 9: Trà Đào Cam Sả -->
+                            <article class="product-card" data-purpose="product-card">
+                                <div class="product-body">
+                                    <div class="product-media">
+                                        <img alt="Tr&agrave; &Dstrok;&agrave;o Cam Sả" class="product-image" src="../images/tra_ao_cam_sa.jpg" />
+                                    </div>
+                                    <h4 class="product-title">
+                                        Tr&agrave; &Dstrok;&agrave;o Cam Sả
+                                    </h4>
+                                    <p class="product-description">
+                                        Vị tr&agrave; &dstrok;en &dstrok;ậm &dstrok;&agrave; k&egrave;m miếng &dstrok;&agrave;o gi&ograve;n ngọt v&agrave; hương thơm thanh dịu...
+                                    </p>
+                                </div>
+                                <div class="product-footer">
+                                    <span class="product-price">
+                                        38.000&dstrok;
+                                    </span>
+                                    <button class="product-action" onclick="addToCart('Tr&agrave; &Dstrok;&agrave;o Cam Sả', 38000)">
+                                        <span>
+                                            + &Dstrok;ặt m&oacute;n
+                                        </span>
+                                    </button>
+                                </div>
+                            </article>
+                        </div>
+                    </section>
+                </div>
+                <!-- BEGIN: WeeklySpecialsSidebar (Right 4 Cols) -->
+                <aside class="specials-sidebar" data-purpose="weekly-specials-aside" id="specials">
+                    <div class="specials-card">
+                        <!-- Heading Tag & Title -->
+                        <div class="specials-header">
+                            <span class="specials-eyebrow">
+                                &starf; WEEKLY SPECIALS &starf;
+                            </span>
+                            <h3 class="specials-title">
+                                M&oacute;n Hot Trong Tuần
+                            </h3>
+                            <p class="specials-subtitle">
+                                &Dstrok;ược thực kh&aacute;ch y&ecirc;u th&iacute;ch nhất
+                            </p>
+                        </div>
+                        <!-- Divider line -->
+                        <div class="specials-divider">
+                        </div>
+                        <!-- Ranked Items List -->
+                        <div class="specials-list" data-purpose="specials-list">
+                            <!-- Item 1: Cà Phê Muối Cozy -->
+                            <div class="special-item">
+                                <div class="special-item-info">
+                                    <img alt="C&agrave; Ph&ecirc; Muối Cozy" class="special-item-image" src="../images/ca_phe_muoi_cozy_2.jpg" />
+                                    <div class="special-item-copy">
+                                        <h5 class="special-item-title">
+                                            C&agrave; Ph&ecirc; Muối Cozy
+                                        </h5>
+                                        <span class="special-item-desc">
+                                            Vị mặn dịu kết hợp &dstrok;ắng ngọt
+                                        </span>
+                                        <span class="special-item-price">
+                                            39.000&dstrok;
+                                        </span>
+                                    </div>
+                                </div>
+                                <button class="special-item-action" onclick="addToCart('C&agrave; Ph&ecirc; Muối Cozy', 39000)" title="Th&ecirc;m v&agrave;o giỏ">
+                                    +
+                                </button>
+                            </div>
+                            <!-- Item 2: Tiramisu Cacao Ý -->
+                            <div class="special-item">
+                                <div class="special-item-info">
+                                    <img alt="Tiramisu Cacao &Yacute;" class="special-item-image" src="../images/tiramisu_cacao_y.jpg" />
+                                    <div class="special-item-copy">
+                                        <h5 class="special-item-title">
+                                            Tiramisu Cacao &Yacute;
+                                        </h5>
+                                        <span class="special-item-desc">
+                                            B&aacute;nh b&eacute;o ngậy tan chảy
+                                        </span>
+                                        <span class="special-item-price">
+                                            49.000&dstrok;
+                                        </span>
+                                    </div>
+                                </div>
+                                <button class="special-item-action" onclick="addToCart('Tiramisu Cacao &Yacute;', 49000)" title="Th&ecirc;m v&agrave;o giỏ">
+                                    +
+                                </button>
+                            </div>
+                            <!-- Item 3: Trà Sen Macchiato -->
+                            <div class="special-item">
+                                <div class="special-item-info">
+                                    <img alt="Tr&agrave; Sen Macchiato" class="special-item-image" src="../images/tra_sen_macchiato_2.jpg" />
+                                    <div class="special-item-copy">
+                                        <h5 class="special-item-title">
+                                            Tr&agrave; Sen Macchiato
+                                        </h5>
+                                        <span class="special-item-desc">
+                                            Thanh m&aacute;t ng&aacute;t hương sen
+                                        </span>
+                                        <span class="special-item-price">
+                                            45.000&dstrok;
+                                        </span>
+                                    </div>
+                                </div>
+                                <button class="special-item-action" onclick="addToCart('Tr&agrave; Sen Macchiato', 45000)" title="Th&ecirc;m v&agrave;o giỏ">
+                                    +
+                                </button>
+                            </div>
+                        </div>
+                        <!-- Promotion Box: Golden Hour -->
+                        <div class="promo-banner" data-purpose="promo-banner">
+                            <div class="promo-icon">
+                                🎁
+                            </div>
+                            <h4 class="promo-title">
+                                Ưu &Dstrok;&atilde;i Giờ V&agrave;ng
+                            </h4>
+                            <p class="promo-text">
+                                Giảm 15% cho tất cả b&aacute;nh ngọt khi mua c&ugrave;ng C&agrave; Ph&ecirc; từ
+                                <span>
+                                    14:00 - 17:00
+                                </span>
+                                mỗi ng&agrave;y.
+                            </p>
+                        </div>
+                    </div>
+                </aside>
+                <!-- END: WeeklySpecialsSidebar -->
+            </div>
+            <!-- Booking & Contact CTA Section -->
+            <section class="booking-section" data-purpose="table-reservation-banner" id="booking">
+                <div class="booking-inner">
+                    <span class="booking-kicker">
+                        D&agrave;nh Ri&ecirc;ng Cho Bạn
+                    </span>
+                    <h3 class="booking-title">
+                        &Dstrok;ặt B&agrave;n &amp; Hội Họp Tại Cozy Bean
+                    </h3>
+                    <p class="booking-text">
+                        Kh&ocirc;ng gian y&ecirc;n t&itilde;nh, trang bị &dstrok;ầy &dstrok;ủ ổ cắm &dstrok;iện, wifi tốc &dstrok;ộ cao v&agrave; g&oacute;c ban c&ocirc;ng tho&aacute;ng m&aacute;t.
+                    </p>
+                    <div class="booking-actions">
+                        <a class="booking-link" href="tel:0901234567">
+                            📞 Hotline: 090 123 4567
+                        </a>
+                        <button class="booking-button" onclick="alert('Cảm ơn bạn! &Dstrok;ội ng&utilde; Cozy Bean sẽ li&ecirc;n hệ bạn ngay sau &iacute;t ph&uacute;t.')">
+                            &Dstrok;ặt Chỗ Trước Ngay
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- END: MainContent -->
+        <!-- BEGIN: Footer -->
+        <footer class="site-footer" data-purpose="main-footer">
+            <div class="footer-container">
+                <div class="footer-grid">
+                    <!-- Col 1: Brand Info -->
+                    <div class="footer-column">
+                        <div class="footer-brand-row">
+                            <div class="footer-brand-mark">
+                                ☕
+                            </div>
+                            <h4>
+                                The Cozy Bean
+                            </h4>
+                        </div>
+                        <p class="footer-text">
+                            Nơi hương vị c&agrave; ph&ecirc; mộc h&ograve;a quyện c&ugrave;ng từng chiếc b&aacute;nh mới ra l&ograve;. Một &dstrok;iểm dừng ch&acirc;n ấm &aacute;p giữa nhịp sống vội v&atilde;.
+                        </p>
+                    </div>
+                    <!-- Col 2: Opening Hours -->
+                    <div class="footer-column">
+                        <h4 class="footer-heading">
+                            Giờ Mở Cửa
+                        </h4>
+                        <ul class="footer-list">
+                            <li>
+                                <span>
+                                    Thứ 2 - Thứ 6:
+                                </span>
+                                <span>
+                                    07:00 - 22:30
+                                </span>
+                            </li>
+                            <li>
+                                <span>
+                                    Thứ 7 - Chủ Nhật:
+                                </span>
+                                <span>
+                                    06:30 - 23:00
+                                </span>
+                            </li>
+                            <li>
+                                &checkmark; Phục vụ tại qu&aacute;n &amp; Mang &dstrok;i
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Col 3: Contact & Address -->
+                    <div class="footer-column">
+                        <h4 class="footer-heading">
+                            Li&ecirc;n Hệ
+                        </h4>
+                        <ul class="footer-list">
+                            <li>
+                                <span>
+                                    📍
+                                </span>
+                                <span>
+                                    128 &Dstrok;ường Hoa Hồng, Phường 2, Ph&uacute; Nhuận, TP.HCM
+                                </span>
+                            </li>
+                            <li>
+                                <span>
+                                    &phone;
+                                </span>
+                                <span>
+                                    090 123 4567 / 028 3848 xxxx
+                                </span>
+                            </li>
+                            <li>
+                                <span>
+                                    ✉
+                                </span>
+                                <span>
+                                    contact@thecozybean.vn
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Col 4: Newsletter & Social -->
+                    <div class="footer-column">
+                        <h4 class="footer-heading">
+                            &Dstrok;&abreve;ng K&yacute; Nhận Ưu &Dstrok;&atilde;i
+                        </h4>
+                        <p class="footer-text">
+                            Nhận ngay voucher giảm 20% cho &dstrok;ơn h&agrave;ng &dstrok;ầu ti&ecirc;n.
+                        </p>
+                        <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Cảm ơn bạn &dstrok;&atilde; &dstrok;&abreve;ng k&yacute; nhận tin!');">
+                            <input class="newsletter-input" placeholder="Nhập email..." required="" type="email" />
+                            <button class="newsletter-button" type="submit">
+                                Gửi
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <!-- Copyright Bar -->
+                <div class="footer-bottom">
+                    <p>
+                        &copy; 2025 THE COZY BEAN - Coffee &amp; Bakery. All rights reserved.
+                    </p>
+                    <div class="footer-links">
+                        <a href="#">
+                            Ch&iacute;nh s&aacute;ch bảo mật
+                        </a>
+                        <span>
+                            &bull;
+                        </span>
+                        <a href="#">
+                            &Dstrok;iều khoản dịch vụ
+                        </a>
+                        <span>
+                            &bull;
+                        </span>
+                        <a href="#">
+                            Hỗ trợ giao h&agrave;ng
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- END: Footer -->
+        <!-- BEGIN: CartToast & Interactive Counter Script -->
+        <div class="cart-toast" id="toast">
+            <div class="toast-content">
+                <div class="toast-icon">
+                    &checkmark;
+                </div>
+                <div class="toast-copy">
+                    <p class="toast-title" id="toastTitle">
+                        &Dstrok;&atilde; th&ecirc;m v&agrave;o giỏ h&agrave;ng!
+                    </p>
+                    <p class="toast-subtitle" id="toastSubtitle">
+                    </p>
+                </div>
+            </div>
+        </div>
+        <script data-purpose="cart-functionality">
+            let totalItems = 0;
+
+            function addToCart(itemName, price) {
+                totalItems += 1;
+                const cartBadge = document.getElementById('cartCountBadge');
+                if (cartBadge) {
+                    cartBadge.innerText = totalItems;
+                    // Bump animation
+                    cartBadge.classList.add('is-bumping');
+                    setTimeout(() => cartBadge.classList.remove('is-bumping'), 200);
+                }
+
+                // Show toast
+                showToast(itemName, price);
+            }
+
+            function showToast(name, price) {
+                const toast = document.getElementById('toast');
+                const toastTitle = document.getElementById('toastTitle');
+                const toastSubtitle = document.getElementById('toastSubtitle');
+
+                if (!toast) return;
+
+                toastTitle.innerText = `Đã thêm ${name}`;
+                toastSubtitle.innerText = `${price.toLocaleString('vi-VN')}đ đã được thêm vào hóa đơn`;
+
+                toast.classList.add('is-visible');
+
+
+                clearTimeout(window.toastTimer);
+                window.toastTimer = setTimeout(() => {
+                    toast.classList.remove('is-visible');
+
+                }, 2400);
+            }
+
+            // Modal / alert for cart button
+            document.getElementById('cartButton').addEventListener('click', () => {
+                if (totalItems === 0) {
+                    alert('Giỏ hàng của bạn đang trống. Hãy chọn món ngon từ thực đơn nhé!');
+                } else {
+                    alert(`Bạn đang có ${totalItems} món trong giỏ hàng. Đang chuẩn bị chuyển tới trang thanh toán!`);
+                }
+            });
+        </script>
+        <!-- END: CartToast & Interactive Counter Script -->
+    </body>
+
+</html>
