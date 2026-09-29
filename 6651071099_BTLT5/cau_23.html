@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Câu 23 - Tính Lương Tháng</title>
+        <link rel="stylesheet" href="styles/cau_23.css">
+    </head>
+
+    <body>
+        <form id="salaryForm">
+            <table class="salary-table">
+                <tr>
+                    <td class="col-label"><label for="baseSalary">Lương</label></td>
+                    <td class="col-input">
+                        <input type="number" id="baseSalary" value="1000000">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-label"><label for="salaryCoeff">Hệ số lương</label></td>
+                    <td class="col-input">
+                        <input type="number" id="salaryCoeff" step="0.1" value="3.2">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="btn-cell">
+                        <button type="button" class="btn-calc" onclick="calculateSalary()">Tính lương tháng</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-label"><label for="monthlySalary">Lương tháng</label></td>
+                    <td class="col-input">
+                        <input type="text" id="monthlySalary" value="3200000" readonly>
+                    </td>
+                </tr>
+            </table>
+        </form>
+
+        <script src="scripts/cau_23.js"></script>
+    </body>
+
+</html>

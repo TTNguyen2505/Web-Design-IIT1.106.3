@@ -1,0 +1,80 @@
+body {
+    font-family: "Times New Roman", Times, serif;
+    margin: 30px;
+    background-color: #ffffff;
+}
+
+/* Khung chứa với viền mỏng màu xanh ngọc */
+.canchi-container {
+    display: inline-block;
+    border: 1px solid #00cc88;
+    width: 450px;
+}
+
+/* Tiêu đề nền vàng nhạt */
+.canchi-header {
+    background-color: #ffffcc;
+    color: #000000;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 8px 0;
+}
+
+/* Nội dung nền xanh lơ nhạt */
+.canchi-body {
+    background-color: #ccffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 10px 15px 15px 15px;
+}
+
+/* Định dạng các khối nhập liệu */
+.input-group label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 4px;
+    color: #000;
+}
+
+.input-group input {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 16px;
+    padding: 3px 6px;
+    width: 130px;
+    border: 1px solid #a0a0a0;
+    background-color: #ffffff;
+    box-sizing: border-box;
+}
+
+.input-group input[readonly] {
+    background-color: #ffffff;
+}
+
+/* Nút bấm chuyển đổi dạng bo tròn */
+.btn-group {
+    padding-bottom: 2px;
+}
+
+.btn-arrow {
+    font-family: monospace;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: -1px;
+    padding: 2px 16px;
+    border-radius: 12px;
+    background: linear-gradient(to bottom, #ffffff 0%, #e0e0e0 100%);
+    border: 1px solid #707070;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    color: #000;
+}
+
+.btn-arrow:hover {
+    background: linear-gradient(to bottom, #f9f9f9 0%, #d0d0d0 100%);
+}
+
+.btn-arrow:active {
+    background: #cccccc;
+}

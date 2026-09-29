@@ -1,0 +1,143 @@
+body {
+    font-family: "Times New Roman", Times, serif;
+    margin: 20px;
+    background-color: #ffffff;
+}
+
+/* Khung thực đơn màu xanh lá chuối */
+.menu-container {
+    width: 380px;
+    background-color: #c4ea04;
+    padding: 15px 12px 20px 12px;
+    box-sizing: border-box;
+}
+
+.menu-title {
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    margin: 0 0 14px 0;
+    letter-spacing: 0.5px;
+    color: #000000;
+}
+
+/* Bảng lựa chọn món */
+.selection-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.selection-table th {
+    color: #0000ff;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 4px 2px;
+    border: 1px solid #99ba00;
+    text-align: center;
+}
+
+.selection-table td {
+    border: 1px solid #99ba00;
+    padding: 2px;
+    vertical-align: top;
+}
+
+.selection-table select {
+    width: 100%;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 14.5px;
+    border: 1px solid #7f9db9;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.selection-table select option {
+    padding: 1px 2px;
+}
+
+/* Cột chọn thời điểm */
+.time-cell {
+    padding: 20px 8px !important;
+    vertical-align: middle !important;
+}
+
+.radio-option {
+    display: flex;
+    align-items: center;
+    margin-bottom: 22px;
+}
+
+.radio-option:last-child {
+    margin-bottom: 0;
+}
+
+.radio-option input[type="radio"] {
+    margin-right: 6px;
+    cursor: pointer;
+}
+
+.radio-option label {
+    font-size: 17px;
+    font-weight: bold;
+    color: #000000;
+    cursor: pointer;
+}
+
+/* Nút Tính tiền dạng viên thuốc */
+.btn-wrap {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.btn-calc {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 2px 16px;
+    border-radius: 12px;
+    background: linear-gradient(to bottom, #ffffff 0%, #ebebeb 50%, #e0e0e0 100%);
+    border: 1px solid #6b9ec7;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    outline: none;
+}
+
+.btn-calc:hover {
+    background: linear-gradient(to bottom, #f9f9f9 0%, #dbdbdb 100%);
+}
+
+.btn-calc:active {
+    background: #cccccc;
+}
+
+/* Bảng hiển thị kết quả tính tiền */
+.bill-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #cbf5fd;
+    border: 2px solid #800000;
+}
+
+.bill-table th,
+.bill-table td {
+    border: 2px solid #800000;
+    padding: 2px 6px;
+    font-size: 18px;
+    color: #000000;
+}
+
+.bill-header {
+    color: #0000ff !important;
+    font-weight: bold;
+    text-align: center;
+}
+
+.bill-table td:first-child {
+    width: 63%;
+    text-align: left;
+}
+
+.bill-table td:last-child {
+    width: 37%;
+    text-align: left;
+}

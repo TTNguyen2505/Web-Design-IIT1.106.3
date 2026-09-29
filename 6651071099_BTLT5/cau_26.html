@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Câu 26 - Tính Can Chi</title>
+        <link rel="stylesheet" href="styles/cau_26.css">
+    </head>
+
+    <body>
+        <div class="canchi-container">
+            <!-- Phần tiêu đề nền vàng -->
+            <div class="canchi-header">
+                TÍNH CAN CHI CỦA NGÀY ÂM LỊCH
+            </div>
+
+            <!-- Phần nội dung nền xanh -->
+            <div class="canchi-body">
+                <div class="input-group">
+                    <label for="namDuongLich">Năm dương lịch</label>
+                    <input type="text" id="namDuongLich" value="2015">
+                </div>
+
+                <div class="btn-group">
+                    <button type="button" class="btn-arrow" onclick="tinhCanChi()">---&gt;</button>
+                </div>
+
+                <div class="input-group">
+                    <label for="namAmLich">Can chi năm âm lịch</label>
+                    <input type="text" id="namAmLich" value="Ất mùi" readonly>
+                </div>
+            </div>
+        </div>
+
+        <script src="scripts/cau_26.js"></script>
+    </body>
+
+</html>

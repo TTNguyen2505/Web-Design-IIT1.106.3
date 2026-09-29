@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Câu 24 - Xuất thứ trong tuần</title>
+        <link rel="stylesheet" href="styles/cau_24.css">
+    </head>
+
+    <body>
+        <form id="dateForm">
+            <table class="date-table">
+                <tr>
+                    <td class="cell-day">
+                        <label for="day">Ngày</label>
+                        <input type="number" id="day" value="12" min="1" max="31">
+                    </td>
+                    <td class="cell-month-year">
+                        <label for="month">Tháng Select:</label>
+                        <select id="month">
+                            <option value="1" selected>1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                        </select>
+                        <label for="year">năm</label>
+                        <input type="number" id="year" value="2015">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="cell-btn">
+                        <button type="button" class="btn-submit" onclick="xuatThu()">Xuất thứ</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="cell-result" id="result">
+                        Thứ 2 Ngày 12 tháng 1 năm 2015
+                    </td>
+                </tr>
+            </table>
+        </form>
+
+        <script src="scripts/cau_24.js"></script>
+    </body>
+
+</html>

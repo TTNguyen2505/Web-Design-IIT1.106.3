@@ -1,0 +1,70 @@
+body {
+    font-family: "Times New Roman", Times, serif;
+    margin: 25px;
+    background-color: #ffffff;
+}
+
+/* Bảng có nền xanh lá mạ nhạt và đường viền xanh */
+.order-table {
+    border-collapse: collapse;
+    background-color: #e2fbdb;
+    border: 1px solid #99d89b;
+}
+
+/* Đường viền và khoảng cách đệm cho ô tiêu đề và ô dữ liệu */
+.order-table th,
+.order-table td {
+    border: 1px solid #99d89b;
+    padding: 3px 6px;
+    text-align: center;
+}
+
+/* Tiêu đề bảng */
+.order-table th {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000000;
+    padding: 6px 12px;
+}
+
+/* Các ô input nhập dữ liệu */
+.input-cell {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 16px;
+    padding: 2px 4px;
+    width: 140px;
+    border: 1px solid #9a9a9a;
+    background-color: #ffffff;
+    box-sizing: border-box;
+}
+
+.input-cell:focus {
+    outline: 2px solid #5b9bd5;
+}
+
+/* Ô chứa nút xóa */
+.action-cell {
+    padding: 3px 10px;
+}
+
+/* Nút Xóa bo tròn dạng viên thuốc */
+.btn-delete {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 14.5px;
+    padding: 1px 14px;
+    border-radius: 12px;
+    background: linear-gradient(to bottom, #ffffff 0%, #ebebeb 100%);
+    border: 1px solid #707070;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    color: #000000;
+    outline: none;
+}
+
+.btn-delete:hover {
+    background: linear-gradient(to bottom, #f7f7f7 0%, #dbdbdb 100%);
+}
+
+.btn-delete:active {
+    background: #cccccc;
+}

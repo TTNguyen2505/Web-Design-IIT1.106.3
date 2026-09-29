@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Câu 22 - Multiply & Divide</title>
+        <link rel="stylesheet" href="styles/cau_22.css">
+    </head>
+
+    <body>
+        <div class="calculator-container">
+            <form id="calcForm">
+                <div class="form-row">
+                    <label for="firstNumber">1st Number :</label>
+                    <input type="number" id="firstNumber" step="any" required>
+                </div>
+                <div class="form-row">
+                    <label for="secondNumber">2nd Number:</label>
+                    <input type="number" id="secondNumber" step="any" required>
+                </div>
+                <div class="button-row">
+                    <button type="button" id="btnMultiply" onclick="calculate('multiply')">Multiply</button>
+                    <button type="button" id="btnDivide" onclick="calculate('divide')">Divide</button>
+                </div>
+            </form>
+
+            <div class="result-area">
+                <p>The Result Is :</p>
+                <div id="result"></div>
+            </div>
+        </div>
+
+        <script src="scripts/cau_22.js"></script>
+    </body>
+
+</html>
