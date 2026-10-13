@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="vi">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechGear - Phụ kiện công nghệ</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  </head>
+
+  <body class="bg-slate-50 font-sans text-slate-800">
+    <!-- Vue quản lý các phần có dữ liệu động, gồm số lượng ở header. -->
+    <div id="app" class="min-h-screen flex flex-col">
+      <header class="sticky top-0 z-10 border-b bg-white shadow-sm">
+        <div class="mx-auto flex max-w-6xl items-center justify-between gap-5 px-5 py-4">
+          <a href="#trang-chu" class="text-xl font-extrabold text-blue-600"><i class="fa-solid fa-bolt"></i> TechGear</a>
+          <!-- Navigation tĩnh -->
+          <nav class="hidden gap-6 text-sm font-semibold md:flex"><a href="#trang-chu">Trang chủ</a><a href="#san-pham">Sản phẩm</a><a href="#khuyen-mai">Khuyến mãi</a><a href="#lien-he">Liên hệ</a></nav>
+          <a href="#gio-hang" class="whitespace-nowrap rounded-full bg-blue-600 px-4 py-2 text-sm font-bold text-white"><i class="fa-solid fa-cart-shopping"></i> Giỏ hàng ({{ cartCount }})</a>
+        </div>
+      </header>
+      <main id="trang-chu" class="mx-auto w-full max-w-6xl flex-1 px-5 py-10">
+        <div class="mb-8 rounded-2xl bg-gradient-to-r from-blue-700 to-cyan-500 px-7 py-10 text-white">
+          <p class="font-semibold">PHỤ KIỆN CHÍNH HÃNG</p>
+          <h1 class="mt-2 text-3xl font-extrabold">Nâng cấp trải nghiệm công nghệ mỗi ngày</h1>
+        </div>
+        <div class="grid gap-8 lg:grid-cols-3">
+          <!-- Toàn bộ SECTION sản phẩm được Vue render bằng v-for. -->
+          <section id="san-pham" class="lg:col-span-2">
+            <div class="mb-5 flex flex-wrap items-center justify-between gap-3">
+              <div>
+                <h2 class="text-2xl font-bold">Sản phẩm nổi bật</h2>
+                <p class="text-sm text-slate-500">{{ danhSachLoc.length }} sản phẩm phù hợp</p>
+              </div><label class="relative"><i class="fa-solid fa-magnifying-glass absolute left-3 top-3 text-slate-400"></i><input v-model="tuKhoa" type="search" placeholder="Tìm sản phẩm..." class="rounded-lg border border-slate-300 py-2 pl-9 pr-3 text-sm"></label>
+            </div>
+            <p v-if="danhSachLoc.length === 0" class="rounded-xl bg-white p-6 text-center text-slate-500">Không tìm thấy sản phẩm phù hợp.</p>
+            <div v-else class="grid gap-5 sm:grid-cols-2">
+              <article v-for="sanPham in danhSachLoc" :key="sanPham.id" class="overflow-hidden rounded-xl bg-white shadow-sm ring-1 ring-slate-200"><img :src="sanPham.anh" :alt="sanPham.ten" class="h-40 w-full object-cover">
+                <div class="p-4">
+                  <h3 class="font-bold">{{ sanPham.ten }}</h3>
+                  <p class="mt-1 min-h-10 text-sm text-slate-500">{{ sanPham.moTa }}</p>
+                  <div class="mt-4 flex items-center justify-between gap-3"><strong class="text-blue-600">{{ dinhDangTien(sanPham.gia) }}</strong><button @click="themVaoGio(sanPham)" class="rounded-lg bg-blue-600 px-3 py-2 text-sm font-semibold text-white">Thêm vào giỏ</button></div>
+                </div>
+              </article>
+            </div>
+          </section>
+          <aside id="gio-hang" class="h-fit rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200 lg:sticky lg:top-24">
+            <h2 class="text-xl font-bold"><i class="fa-solid fa-bag-shopping text-blue-600"></i> Giỏ hàng của bạn</h2>
+            <p v-if="cart.length === 0" class="my-6 rounded-lg bg-slate-50 p-4 text-center text-sm text-slate-500">Giỏ hàng trống</p>
+            <div v-else class="mt-4">
+              <ul class="divide-y divide-slate-100">
+                <li v-for="(sanPham, index) in cart" :key="sanPham.id + '-' + index" class="flex items-center gap-3 py-3"><img :src="sanPham.anh" :alt="sanPham.ten" class="h-12 w-12 rounded-md object-cover">
+                  <div class="min-w-0 flex-1">
+                    <p class="truncate text-sm font-semibold">{{ sanPham.ten }}</p>
+                    <p class="text-sm text-blue-600">{{ dinhDangTien(sanPham.gia) }}</p>
+                  </div><button @click="xoaKhoiGio(index)" title="Xóa khỏi giỏ" class="rounded p-2 text-red-500"><i class="fa-solid fa-trash"></i></button>
+                </li>
+              </ul>
+              <div class="mt-4 flex justify-between border-t pt-4 font-bold"><span>Tổng tiền</span><span class="text-blue-600">{{ dinhDangTien(tongTien) }}</span></div>
+            </div>
+          </aside>
+        </div>
+        <!-- SECTION khuyến mãi tĩnh -->
+        <section id="khuyen-mai" class="mt-12 rounded-2xl bg-amber-50 p-7 ring-1 ring-amber-200">
+          <h2 class="text-2xl font-bold text-amber-900">Khuyến mãi hôm nay</h2>
+          <div class="mt-4 grid gap-4 md:grid-cols-2">
+            <p class="rounded-xl bg-white p-4"><b>Giảm 15%</b> cho đơn hàng phụ kiện từ 500.000đ.</p>
+            <p class="rounded-xl bg-white p-4"><b>Miễn phí vận chuyển</b> cho mọi đơn hàng từ 300.000đ.</p>
+          </div>
+        </section>
+      </main>
+      <footer id="lien-he" class="bg-slate-900 px-5 py-8 text-center text-sm text-slate-300">
+        <p class="font-bold text-white">TechGear Accessories</p>
+        <p class="mt-2">Email: support@techgear.vn · Hotline: 0901 234 567</p>
+        <p class="mt-2">Facebook · Instagram · TikTok</p>
+        <p class="mt-3 text-slate-500">© 2026 TechGear. Bản quyền thuộc về TechGear.</p>
+      </footer>
+    </div>
+    <!-- Vue CDN phải đặt trước app.js để app.js gọi được Vue.createApp. -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="../js/app.js"></script>
+  </body>
+
+</html>
